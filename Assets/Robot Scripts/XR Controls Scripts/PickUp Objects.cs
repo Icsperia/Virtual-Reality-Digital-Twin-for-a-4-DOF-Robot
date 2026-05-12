@@ -1,3 +1,4 @@
+
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -11,10 +12,14 @@ public class PickUpObjects : MonoBehaviour
 
     private Rigidbody CurrentObjectRigidbody;
 
+    private Vector3 lastPumpPosition;
+
+    private Vector3 pumpVelocity;
+
     [SerializeField] Transform pump;
 
 
-    [SerializeField] private float pickUpRange = 0.2f;
+    [SerializeField] private float pickUpRange = 0.5f;
     [SerializeField] private float prickUpForce = 100f;
 
     [SerializeField] private LayerMask layerMask;
@@ -39,7 +44,7 @@ public class PickUpObjects : MonoBehaviour
   
     void Update()
     {
-        Debug.DrawRay(pump.position, pump.up * pickUpRange, Color.yellow);
+    Debug.DrawRay(pump.position, pump.up * pickUpRange, Color.yellow);
     
 
     Debug.DrawRay(pump.position, pump.forward * pickUpRange, Color.blue);
@@ -48,6 +53,9 @@ public class PickUpObjects : MonoBehaviour
     
    
     Debug.DrawRay(pump.position, pump.forward * pickUpRange, Color.blue);
+
+    pumpVelocity = (pump.position - lastPumpPosition)/Time.deltaTime;
+    lastPumpPosition = pump.position;
        bool isPressed = mainTriggerLeft.action.IsPressed();
 
         if (isPressed && !wasPressedLastFrame)
@@ -100,7 +108,8 @@ public class PickUpObjects : MonoBehaviour
             CurrentObjectRigidbody.transform.SetParent(null);
             CurrentObjectRigidbody.isKinematic = false;
             holdObject = null;
-
+            CurrentObjectRigidbody.transform.position = pump.position;
+            CurrentObjectRigidbody.linearVelocity = pumpVelocity;
         }
 
         void MoveObject()

@@ -747,7 +747,6 @@ GameObject:
   - component: {fileID: 166142357}
   - component: {fileID: 166142356}
   - component: {fileID: 166142360}
-  - component: {fileID: 166142361}
   m_Layer: 0
   m_Name: horizontalArm__1__1
   m_TagString: Untagged
@@ -893,32 +892,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 166142354}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 461073740014f56438047848c609e26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PropertiesArticulateBody3
-  stiffness: 10000
-  damping: 1000
-  limit: 10000
   upperLimit: 75
   lowerLimit: -75
---- !u!114 &166142361
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 166142354}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40e529cb207884a939b5a774102363e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.Robotics.UrdfImporter::JointControl
-  direction: 0
-  speed: 60
-  joint: {fileID: 166142358}
-  controltype: 0
 --- !u!1001 &181743130
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1310,7 +1290,6 @@ GameObject:
   - component: {fileID: 267367751}
   - component: {fileID: 267367750}
   - component: {fileID: 267367749}
-  - component: {fileID: 267367753}
   - component: {fileID: 267367754}
   m_Layer: 0
   m_Name: horizontalSegmentV2.1__1__1
@@ -1449,23 +1428,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.Robotics.UrdfImporter::Unity.Robotics.UrdfImporter.UrdfLink
   IsBaseLink: 0
---- !u!114 &267367753
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 267367747}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9264985012444df4280196e07437c345, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PropertiesArticulateBody8
-  stiffness: 10000
-  damping: 1000
-  limit: 10000
-  upperLimit: 60
-  lowerLimit: -60
 --- !u!114 &267367754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1475,13 +1437,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 267367747}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40e529cb207884a939b5a774102363e2, type: 3}
+  m_Script: {fileID: 11500000, guid: 4766dab2ecb036b4694f365afb0f93c7, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Unity.Robotics.UrdfImporter::JointControl
-  direction: 0
-  speed: 60
-  joint: {fileID: 267367751}
-  controltype: 0
+  m_EditorClassIdentifier: Assembly-CSharp::AnglePropertiesHorizontal1
+  upperLimit: 60
+  lowerLimit: -60
 --- !u!1 &280619867
 GameObject:
   m_ObjectHideFlags: 8
@@ -1694,14 +1654,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ccc715458ccc604c885c31ea765ec6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PropertiesArticulateBody0
-  stiffness: 1000000
-  damping: 10
-  limit: 1000000
   upperLimit: 11
   lowerLimit: -11
-  maxVelocityLimit: 100000
-  speed: 100
-  acceleration: 1000
 --- !u!114 &328962978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1709,7 +1663,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 328962971}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 40e529cb207884a939b5a774102363e2, type: 3}
   m_Name: 
@@ -2209,8 +2163,8 @@ GameObject:
   - component: {fileID: 399558001}
   - component: {fileID: 399558000}
   - component: {fileID: 399557999}
-  - component: {fileID: 399558003}
   - component: {fileID: 399558005}
+  - component: {fileID: 399558006}
   m_Layer: 0
   m_Name: pumpSupport2_1
   m_TagString: Untagged
@@ -2348,23 +2302,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.Robotics.UrdfImporter::Unity.Robotics.UrdfImporter.UrdfLink
   IsBaseLink: 0
---- !u!114 &399558003
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 399557997}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d538936f38bdc5341ad67ca0196b2605, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PropertiesArticulateBody5
-  stiffness: 10000
-  damping: 1000
-  limit: 10000
-  upperLimit: 45
-  lowerLimit: -45
 --- !u!114 &399558005
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2385,6 +2322,20 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 64
+--- !u!114 &399558006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 399557997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69d1b4df404f1f04382b10b83fa201e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AnglePropertiesNoozle
+  upperLimit: 45
+  lowerLimit: -45
 --- !u!1001 &424871244
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2770,10 +2721,9 @@ GameObject:
   - component: {fileID: 531199631}
   - component: {fileID: 531199630}
   - component: {fileID: 531199633}
-  - component: {fileID: 531199632}
-  - component: {fileID: 531199634}
+  - component: {fileID: 531199639}
   - component: {fileID: 531199635}
-  - component: {fileID: 531199637}
+  - component: {fileID: 531199634}
   - component: {fileID: 531199638}
   m_Layer: 0
   m_Name: maxarmv2.2
@@ -2815,26 +2765,6 @@ Transform:
   - {fileID: 1614304339}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &531199632
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 531199628}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 740aff97a1d0b9b42bd68fba91063679, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CompensationSupports
-  vertical1: {fileID: 2084246968}
-  upDownSegment: {fileID: 803675112}
-  verticalArm: {fileID: 1979754405}
-  vertical2: {fileID: 1373239431}
-  horizontalSegment2: {fileID: 2056982832}
-  horizontalArm: {fileID: 166142358}
-  horizontalSegment1: {fileID: 267367751}
-  pumpSupport1: {fileID: 1347180121}
 --- !u!114 &531199633
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2847,17 +2777,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cceb8940a3cdc145a965e2bff5f1a64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Compensations
+  verticalArm: {fileID: 1979754405}
   horizontalArm: {fileID: 166142358}
   upDownSegment: {fileID: 803675112}
   pumpSupport1: {fileID: 1347180121}
-  verticalArm: {fileID: 1979754405}
+  vertical2: {fileID: 1373239431}
   horizontalSegment1: {fileID: 267367751}
+  vertical1: {fileID: 2084246968}
+  horizontalSegment2: {fileID: 2056982832}
+  offset: 0
   offset1: 0
   offset2: 0
-  offset: 0
   pumpOffset: 0
-  leaningIntensity: 0
-  leaningIntensityPump: 0
 --- !u!114 &531199634
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2886,7 +2817,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 531199628}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 929d7581b42dbd14d84cd31704ffe03b, type: 3}
   m_Name: 
@@ -2911,22 +2842,6 @@ MonoBehaviour:
   mainTrigger: {fileID: 8836625431948561128, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   secondaryTrigger: {fileID: 187161793506945269, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   pumpSupport2: {fileID: 399558001}
---- !u!114 &531199637
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 531199628}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c8bb2ed4052efe40bd26b4fe21543e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::IKDebug
-  baseRotative: {fileID: 328962975}
-  shoulder: {fileID: 1979754405}
-  elbow: {fileID: 803675112}
-  target: {fileID: 0}
 --- !u!114 &531199638
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2934,7 +2849,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 531199628}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8038494dc49913a4c917e69cf7a98cd3, type: 3}
   m_Name: 
@@ -2945,6 +2860,32 @@ MonoBehaviour:
   target: {fileID: 885135933}
   robotScale: 5
   jointSpeed: 200
+--- !u!114 &531199639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 531199628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cef4f80a5f5cb6640acc49980e36d93d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PropertiesArticulateBody
+  baseLink: {fileID: 1614304341}
+  baseRotative: {fileID: 328962975}
+  verticalArm: {fileID: 1979754405}
+  upDown: {fileID: 803675112}
+  horizontalArm: {fileID: 166142358}
+  noozle: {fileID: 399558001}
+  vertical1: {fileID: 2084246968}
+  vertical2: {fileID: 1373239431}
+  horizontal1: {fileID: 267367751}
+  horizontal2: {fileID: 2056982832}
+  noozleSupport: {fileID: 1347180121}
+  stiffness: 20000
+  damping: 200
+  limit: 20000
 --- !u!1 &566558683
 GameObject:
   m_ObjectHideFlags: 8
@@ -3362,7 +3303,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -4249,12 +4190,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 803675108}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf412f289eb2fa248bd7a5100358b0d9, type: 3}
+  m_Script: {fileID: 11500000, guid: 461073740014f56438047848c609e26a, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PropertiesArticulateBody1
-  stiffness: 10000
-  damping: 1000
-  limit: 10000
+  m_EditorClassIdentifier: Assembly-CSharp::AnglePropertiesUpDown
   upperLimit: 45
   lowerLimit: 0
 --- !u!114 &803675115
@@ -4626,7 +4564,7 @@ Transform:
   m_GameObject: {fileID: 885135929}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.416, y: 2.94, z: 0.05}
+  m_LocalPosition: {x: -0.13, y: 2.44, z: -0.72}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4679,7 +4617,7 @@ MonoBehaviour:
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_Reference: {fileID: 5124856829409830267, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+    m_Reference: {fileID: 4855896293718184719, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   backAction:
     m_UseReference: 1
     m_Action:
@@ -4691,7 +4629,7 @@ MonoBehaviour:
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_Reference: {fileID: -2543531381401213949, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+    m_Reference: {fileID: 8402607741090894688, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   upAction:
     m_UseReference: 1
     m_Action:
@@ -5993,7 +5931,7 @@ GameObject:
   - component: {fileID: 1347180121}
   - component: {fileID: 1347180120}
   - component: {fileID: 1347180119}
-  - component: {fileID: 1347180123}
+  - component: {fileID: 1347180124}
   m_Layer: 0
   m_Name: pumpSupport__1
   m_TagString: Untagged
@@ -6132,7 +6070,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.Robotics.UrdfImporter::Unity.Robotics.UrdfImporter.UrdfLink
   IsBaseLink: 0
---- !u!114 &1347180123
+--- !u!114 &1347180124
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6141,12 +6079,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1347180117}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4766dab2ecb036b4694f365afb0f93c7, type: 3}
+  m_Script: {fileID: 11500000, guid: 9264985012444df4280196e07437c345, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PropertiesArticulateBody4
-  stiffness: 10000
-  damping: 1000
-  limit: 10000
+  m_EditorClassIdentifier: Assembly-CSharp::AnglePropertiesNoozleSupport
   upperLimit: 0
   lowerLimit: -30
 --- !u!1 &1351410690
@@ -6313,7 +6248,6 @@ GameObject:
   - component: {fileID: 1373239430}
   - component: {fileID: 1373239429}
   - component: {fileID: 1373239433}
-  - component: {fileID: 1373239434}
   m_Layer: 0
   m_Name: vertical2_1
   m_TagString: Untagged
@@ -6461,30 +6395,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1373239427}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 112c64b3e9c1aeb4b99b2ed0a0cc2d3e, type: 3}
+  m_Script: {fileID: 11500000, guid: f9f5efc62394e3345ba25eb08cb05466, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PropertiesArticulateBody6
-  stiffness: 10000
-  damping: 1000
-  limit: 10000
+  m_EditorClassIdentifier: Assembly-CSharp::AnglePropertiesVertical2
   upperLimit: 90
   lowerLimit: -90
---- !u!114 &1373239434
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1373239427}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40e529cb207884a939b5a774102363e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.Robotics.UrdfImporter::JointControl
-  direction: 0
-  speed: 60
-  joint: {fileID: 1373239431}
-  controltype: 0
 --- !u!1 &1452340062
 GameObject:
   m_ObjectHideFlags: 0
@@ -8065,7 +7980,6 @@ GameObject:
   - component: {fileID: 1884539863}
   - component: {fileID: 1884539862}
   - component: {fileID: 1884539867}
-  - component: {fileID: 1884539866}
   m_Layer: 6
   m_Name: Cube
   m_TagString: Untagged
@@ -8107,7 +8021,7 @@ MeshRenderer:
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
-  m_LightProbeUsage: 1
+  m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
@@ -8160,33 +8074,12 @@ Transform:
   m_GameObject: {fileID: 1884539861}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.612, y: 0.279, z: -0.352}
+  m_LocalPosition: {x: 0.612, y: 0.29, z: -0.352}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1884539866
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1884539861}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &1884539867
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8195,7 +8088,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1884539861}
   serializedVersion: 5
-  m_Mass: 5
+  m_Mass: 10
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -8211,7 +8104,7 @@ Rigidbody:
   m_ImplicitTensor: 1
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!1 &1918611289
@@ -8467,14 +8360,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1979754401}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69d1b4df404f1f04382b10b83fa201e8, type: 3}
+  m_Script: {fileID: 11500000, guid: bf412f289eb2fa248bd7a5100358b0d9, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PropertiesArticulateBody2
-  stiffness: 10000
-  damping: 1000
-  limit: 10000
-  upperLimit: 80
-  lowerLimit: -80
+  m_EditorClassIdentifier: Assembly-CSharp::AnglePropertiesVerticalArm
+  upperLimit: 75
+  lowerLimit: -75
 --- !u!114 &1979754408
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9404,7 +9294,6 @@ GameObject:
   - component: {fileID: 2056982833}
   - component: {fileID: 2056982832}
   - component: {fileID: 2056982831}
-  - component: {fileID: 2056982834}
   - component: {fileID: 2056982835}
   - component: {fileID: 2056982836}
   m_Layer: 0
@@ -9529,23 +9418,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.Robotics.UrdfImporter::Unity.Robotics.UrdfImporter.UrdfLink
   IsBaseLink: 0
---- !u!114 &2056982834
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2056982828}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f9f5efc62394e3345ba25eb08cb05466, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PropertiesArticulateBody7
-  stiffness: 10000
-  damping: 1000
-  limit: 10000
-  upperLimit: 75
-  lowerLimit: -75
 --- !u!114 &2056982835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9571,13 +9443,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2056982828}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40e529cb207884a939b5a774102363e2, type: 3}
+  m_Script: {fileID: 11500000, guid: d538936f38bdc5341ad67ca0196b2605, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Unity.Robotics.UrdfImporter::JointControl
-  direction: 0
-  speed: 60
-  joint: {fileID: 2056982832}
-  controltype: 0
+  m_EditorClassIdentifier: Assembly-CSharp::AnglePropertiesHorizontal2
+  upperLimit: 75
+  lowerLimit: -75
 --- !u!1 &2084103262
 GameObject:
   m_ObjectHideFlags: 0
@@ -9638,7 +9508,6 @@ GameObject:
   - component: {fileID: 2084246967}
   - component: {fileID: 2084246966}
   - component: {fileID: 2084246970}
-  - component: {fileID: 2084246971}
   m_Layer: 0
   m_Name: vertical1_1
   m_TagString: Untagged
@@ -9783,7 +9652,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2084246964}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 27fa34bd3f28e1e4e99f2e580a80dc5c, type: 3}
   m_Name: 
@@ -9793,22 +9662,6 @@ MonoBehaviour:
   limit: 10000
   upperLimit: 90
   lowerLimit: -90
---- !u!114 &2084246971
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2084246964}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40e529cb207884a939b5a774102363e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.Robotics.UrdfImporter::JointControl
-  direction: 0
-  speed: 60
-  joint: {fileID: 2084246968}
-  controltype: 0
 --- !u!1 &2090961517
 GameObject:
   m_ObjectHideFlags: 0
