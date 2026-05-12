@@ -9,7 +9,7 @@ public class IKTargetController : MonoBehaviour
     public InputActionProperty forwardAction;     // Buton fata
     public InputActionProperty backAction;        // Buton spate
     public InputActionProperty upAction;          // Buton sus
-    public InputActionProperty downAction;        // Buton jos
+    public InputActionProperty downAction;        // Buton jos// Buton jos
 
     [Header("Speed")]
     public float moveSpeed = 0.5f;

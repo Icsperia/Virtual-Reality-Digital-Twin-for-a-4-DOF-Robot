@@ -24,7 +24,7 @@ public class ResetPositions : MonoBehaviour
      public bool isReseting;
 
      public bool    joystickButtonPressed;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
     void Start()
     {
         
@@ -35,7 +35,7 @@ public class ResetPositions : MonoBehaviour
         if(joystickButton != null)
         joystickButton.action.Enable();
     }
-    // Update is called once per frame
+
     void Update()
     {
 

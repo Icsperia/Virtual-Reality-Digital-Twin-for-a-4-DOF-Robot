@@ -36,9 +36,5 @@ articulationDrive.driveType = ArticulationDriveType.Force;
 articulationBody.xDrive = articulationDrive;
 
     } 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }

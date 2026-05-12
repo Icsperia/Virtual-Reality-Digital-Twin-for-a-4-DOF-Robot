@@ -2,17 +2,17 @@ using System;
 using UnityEngine;
 
 [RequireComponent(typeof(ArticulationBody))]
-public class PropertiesArticulateBody0 : MonoBehaviour
+public class PropertiesArticulateBody : MonoBehaviour
 {
     private ArticulationBody articulationBody;
-    [SerializeField] private float stiffness = 10000f;
-    [SerializeField] private float damping = 10f;
-    [SerializeField] private float limit = 10000f;
-    [SerializeField] private float upperLimit = 270f;
-    [SerializeField] private float lowerLimit = -270f;
-    [SerializeField] private float maxVelocityLimit = 1000f;
-    [SerializeField] private float speed = 5f;
-    [SerializeField] private float acceleration = 5f;
+    [SerializeField] private float stiffness;
+    [SerializeField] private float damping ;
+    [SerializeField] private float limit;
+    [SerializeField] private float upperLimit;
+    [SerializeField] private float lowerLimit;
+    [SerializeField] private float maxVelocityLimit;
+    [SerializeField] private float speed;
+    [SerializeField] private float acceleration;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class MaxArmIK1 : MonoBehaviour
+public class RoboticArmInverseKinematics : MonoBehaviour
 {
     [Header("Joints")]
     public ArticulationBody baseRotative;
