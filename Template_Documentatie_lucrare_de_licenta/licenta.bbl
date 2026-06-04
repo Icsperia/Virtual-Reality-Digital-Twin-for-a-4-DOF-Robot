@@ -120,6 +120,26 @@
       \verb https://www.mdpi.com/1660-4601/19/18/11278
       \endverb
     \endentry
+    \entry{MaxArmServo}{online}{}{}
+      \list{organization}{1}{%
+        {Hiwonder}%
+      }
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labeltitlesource}{title}
+      \field{title}{Hardware Basic Learnig}
+      \field{urlday}{31}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{year}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://docs.hiwonder.com/projects/MaxArm/en/latest/docs/5.Hardware_Basic_Learnig_formatted.html
+      \endverb
+      \verb{url}
+      \verb https://docs.hiwonder.com/projects/MaxArm/en/latest/docs/5.Hardware_Basic_Learnig_formatted.html
+      \endverb
+    \endentry
     \entry{MaxArm}{online}{}{}
       \list{organization}{1}{%
         {Hiwonder}%
@@ -160,163 +180,6 @@
       \verb https://www.clearpathrobotics.com/assets/guides/kinetic/ros/Intro%20to%20the%20Robot%20Operating%20System.html
       \endverb
     \endentry
-    \entry{ref3}{article}{}{}
-      \name{author}{4}{}{%
-        {{hash=e4bbd6268a4622f946b0ab69eb86e9a8}{%
-           family={Ipiales},
-           familyi={I\bibinitperiod},
-           given={Jordan\bibnamedelima S.},
-           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
-        {{hash=505defb459a89c49c9564ea01013347d}{%
-           family={Araque},
-           familyi={A\bibinitperiod},
-           given={Edison\bibnamedelima J.},
-           giveni={E\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-        {{hash=049bc95ff00ee1afa3a0993672e441b3}{%
-           family={Andaluz},
-           familyi={A\bibinitperiod},
-           given={Victor\bibnamedelima H.},
-           giveni={V\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
-        {{hash=fa6b0d8da3540fecade0e665096ebef3}{%
-           family={Naranjo},
-           familyi={N\bibinitperiod},
-           given={Cesar\bibnamedelima A.},
-           giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-      }
-      \strng{namehash}{df1a9fc7a293e506201f6e315e09813e}
-      \strng{fullhash}{821a95fe9da7f3db143543414733fb3e}
-      \strng{fullhashraw}{821a95fe9da7f3db143543414733fb3e}
-      \strng{bibnamehash}{df1a9fc7a293e506201f6e315e09813e}
-      \strng{authorbibnamehash}{df1a9fc7a293e506201f6e315e09813e}
-      \strng{authornamehash}{df1a9fc7a293e506201f6e315e09813e}
-      \strng{authorfullhash}{821a95fe9da7f3db143543414733fb3e}
-      \strng{authorfullhashraw}{821a95fe9da7f3db143543414733fb3e}
-      \field{sortinit}{I}
-      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Electronics}
-      \field{number}{4}
-      \field{title}{Virtual Training System for the Teaching-Learning Process in the Area of Industrial Robotics}
-      \field{volume}{12}
-      \field{year}{2023}
-      \field{pages}{974}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.3390/electronics12040974
-      \endverb
-      \verb{urlraw}
-      \verb https://www.mdpi.com/2079-9292/12/4/974
-      \endverb
-      \verb{url}
-      \verb https://www.mdpi.com/2079-9292/12/4/974
-      \endverb
-    \endentry
-    \entry{ref1}{article}{}{}
-      \name{author}{5}{}{%
-        {{hash=c8b1ae4b31d972dfeaf2b1fc5ab9c77f}{%
-           family={Maddipatla},
-           familyi={M\bibinitperiod},
-           given={Yashwanth},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=c05348706eacba04f88b7fcb639716d5}{%
-           family={Tian},
-           familyi={T\bibinitperiod},
-           given={Sibo},
-           giveni={S\bibinitperiod}}}%
-        {{hash=f063e3c40c7132bd77354100a3603fbb}{%
-           family={Liang},
-           familyi={L\bibinitperiod},
-           given={Xiao},
-           giveni={X\bibinitperiod}}}%
-        {{hash=b5955d4d06b362064094bdc8acdc7972}{%
-           family={Zheng},
-           familyi={Z\bibinitperiod},
-           given={Minghui},
-           giveni={M\bibinitperiod}}}%
-        {{hash=370d79c491ae3949a42694e1ed295a3a}{%
-           family={Li},
-           familyi={L\bibinitperiod},
-           given={Beiwen},
-           giveni={B\bibinitperiod}}}%
-      }
-      \strng{namehash}{d822b1edb4e0207c5f8ec6822650bc79}
-      \strng{fullhash}{e43dc7b2367686e06bdcf1e7932dae74}
-      \strng{fullhashraw}{e43dc7b2367686e06bdcf1e7932dae74}
-      \strng{bibnamehash}{d822b1edb4e0207c5f8ec6822650bc79}
-      \strng{authorbibnamehash}{d822b1edb4e0207c5f8ec6822650bc79}
-      \strng{authornamehash}{d822b1edb4e0207c5f8ec6822650bc79}
-      \strng{authorfullhash}{e43dc7b2367686e06bdcf1e7932dae74}
-      \strng{authorfullhashraw}{e43dc7b2367686e06bdcf1e7932dae74}
-      \field{sortinit}{M}
-      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Machines}
-      \field{number}{3}
-      \field{title}{VR Co-Lab: A Virtual Reality Platform for Human--Robot Disassembly Training and Synthetic Data Generation}
-      \field{volume}{13}
-      \field{year}{2023}
-      \field{pages}{239}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.3390/machines13030239
-      \endverb
-      \verb{urlraw}
-      \verb https://www.mdpi.com/2075-1702/13/3/239
-      \endverb
-      \verb{url}
-      \verb https://www.mdpi.com/2075-1702/13/3/239
-      \endverb
-    \endentry
-    \entry{ref2}{inproceedings}{}{}
-      \name{author}{4}{}{%
-        {{hash=4b2112c70e0a58dca254c517265a37e2}{%
-           family={Martinez\bibnamedelima Oliveira},
-           familyi={M\bibinitperiod\bibinitdelim O\bibinitperiod},
-           given={David},
-           giveni={D\bibinitperiod}}}%
-        {{hash=e83f6f99686d48306de5fee0c51632dd}{%
-           family={Castro\bibnamedelima Cao},
-           familyi={C\bibinitperiod\bibinitdelim C\bibinitperiod},
-           given={Sandra},
-           giveni={S\bibinitperiod}}}%
-        {{hash=cc0c531d9014c114cc782f90eb564f80}{%
-           family={Fernandez\bibnamedelima Hermida},
-           familyi={F\bibinitperiod\bibinitdelim H\bibinitperiod},
-           given={Xulio},
-           giveni={X\bibinitperiod}}}%
-        {{hash=65f8e3a07e4fe10ca5082edec4afe833}{%
-           family={Martin\bibnamedelima Rodriguez},
-           familyi={M\bibinitperiod\bibinitdelim R\bibinitperiod},
-           given={Fernando},
-           giveni={F\bibinitperiod}}}%
-      }
-      \strng{namehash}{dd8df3dd139fe942a7ceee0d6ff332c8}
-      \strng{fullhash}{06806715bdb94290fce061003d8fdc22}
-      \strng{fullhashraw}{06806715bdb94290fce061003d8fdc22}
-      \strng{bibnamehash}{dd8df3dd139fe942a7ceee0d6ff332c8}
-      \strng{authorbibnamehash}{dd8df3dd139fe942a7ceee0d6ff332c8}
-      \strng{authornamehash}{dd8df3dd139fe942a7ceee0d6ff332c8}
-      \strng{authorfullhash}{06806715bdb94290fce061003d8fdc22}
-      \strng{authorfullhashraw}{06806715bdb94290fce061003d8fdc22}
-      \field{sortinit}{M}
-      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{2007 IEEE International Symposium on Industrial Electronics}
-      \field{title}{Virtual Reality System for Industrial Training}
-      \field{year}{2007}
-      \verb{doi}
-      \verb 10.1109/ISIE.2007.4374863
-      \endverb
-      \verb{urlraw}
-      \verb https://ieeexplore.ieee.org/document/4374863
-      \endverb
-      \verb{url}
-      \verb https://ieeexplore.ieee.org/document/4374863
-      \endverb
-    \endentry
     \entry{Quest3S}{online}{}{}
       \list{organization}{1}{%
         {Meta}%
@@ -355,6 +218,85 @@
       \endverb
       \verb{url}
       \verb https://mqtt.org/
+      \endverb
+    \endentry
+    \entry{RayCast}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=2d178f7192c3458af86a8c4d6b59942d}{%
+           family={Paul},
+           familyi={P\bibinitperiod},
+           given={Killman},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Medium}%
+      }
+      \strng{namehash}{2d178f7192c3458af86a8c4d6b59942d}
+      \strng{fullhash}{2d178f7192c3458af86a8c4d6b59942d}
+      \strng{fullhashraw}{2d178f7192c3458af86a8c4d6b59942d}
+      \strng{bibnamehash}{2d178f7192c3458af86a8c4d6b59942d}
+      \strng{authorbibnamehash}{2d178f7192c3458af86a8c4d6b59942d}
+      \strng{authornamehash}{2d178f7192c3458af86a8c4d6b59942d}
+      \strng{authorfullhash}{2d178f7192c3458af86a8c4d6b59942d}
+      \strng{authorfullhashraw}{2d178f7192c3458af86a8c4d6b59942d}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Raycast in Unity}
+      \field{urlday}{28}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.1109/ICCAR.2015.7166008
+      \endverb
+      \verb{urlraw}
+      \verb https://medium.com/@pkillman2000/raycast-in-unity-4c1895dc33d6
+      \endverb
+      \verb{url}
+      \verb https://medium.com/@pkillman2000/raycast-in-unity-4c1895dc33d6
+      \endverb
+    \endentry
+    \entry{RB}{online}{}{}
+      \list{organization}{1}{%
+        {Unity}%
+      }
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labeltitlesource}{title}
+      \field{title}{Rigidbody}
+      \field{urlday}{28}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://docs.unity3d.com/6000.2/Documentation/ScriptReference/Rigidbody.html
+      \endverb
+      \verb{url}
+      \verb https://docs.unity3d.com/6000.2/Documentation/ScriptReference/Rigidbody.html
+      \endverb
+    \endentry
+    \entry{DigTwin}{online}{}{}
+      \list{organization}{1}{%
+        {Medium}%
+      }
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labeltitlesource}{title}
+      \field{title}{The History And Evolution Of Digital Twin Technology}
+      \field{urlday}{22}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://medium.com/@sahilbhutada28/the-history-and-evolution-of-digital-twin-technology-6a0d97ee454b
+      \endverb
+      \verb{url}
+      \verb https://medium.com/@sahilbhutada28/the-history-and-evolution-of-digital-twin-technology-6a0d97ee454b
       \endverb
     \endentry
     \entry{UU}{online}{}{}
@@ -417,6 +359,46 @@
       \verb https://learn.unity.com/course/unity-for-artists-curricular-framework-resources/tutorial/what-can-unity-do#5fa1bdc0edbc2a01f0fae7a5
       \endverb
     \endentry
+    \entry{DT}{online}{}{}
+      \list{organization}{1}{%
+        {Intel}%
+      }
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labeltitlesource}{title}
+      \field{title}{What Is a Digital Twin?}
+      \field{urlday}{28}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{year}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.intel.com/content/www/us/en/learn/what-is-a-digital-twin.html
+      \endverb
+      \verb{url}
+      \verb https://www.intel.com/content/www/us/en/learn/what-is-a-digital-twin.html
+      \endverb
+    \endentry
+    \entry{DigTwinIBM}{online}{}{}
+      \list{organization}{1}{%
+        {IBM}%
+      }
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labeltitlesource}{title}
+      \field{title}{What is a digital twin?}
+      \field{urlday}{25}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.ibm.com/think/topics/digital-twin
+      \endverb
+      \verb{url}
+      \verb https://www.ibm.com/think/topics/digital-twin
+      \endverb
+    \endentry
     \entry{Fusion}{online}{}{}
       \list{organization}{1}{%
         {Autodesk}%
@@ -435,6 +417,26 @@
       \endverb
       \verb{url}
       \verb https://www.autodesk.com/solutions/what-is-fusion-360
+      \endverb
+    \endentry
+    \entry{IK}{online}{}{}
+      \list{organization}{1}{%
+        {MathWorks}%
+      }
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labeltitlesource}{title}
+      \field{title}{What Is Inverse Kinematics?}
+      \field{urlday}{25}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{year}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.mathworks.com/discovery/inverse-kinematics.html
+      \endverb
+      \verb{url}
+      \verb https://www.mathworks.com/discovery/inverse-kinematics.html
       \endverb
     \endentry
     \entry{ps}{online}{}{}

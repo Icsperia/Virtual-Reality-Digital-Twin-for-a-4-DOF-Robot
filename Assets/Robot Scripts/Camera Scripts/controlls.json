@@ -1,0 +1,20 @@
+{
+    "RightController": [
+        {
+            "ThumbStick":["Right","Move Right", "Left","Move Left"],
+            "button1": ["A","Up"],
+            "button2": ["B","Down"],
+            "FrontTrigger": ["FrontTrigger","Forward"],
+            "SideTrigger": ["SideTrigger","Backward"]
+        }
+    ],
+    "LeftController": [
+        {
+            "ThumbStick":["Move",""],
+            "button1": ["Y","reset"],
+            "button2": ["X"," "],
+            "FrontTrigger": [ "FrontTrigger","Activate/Deactivate Pump"],
+            "SideTrigger": ["SideTrigger"," "]
+        }
+    ]
+}

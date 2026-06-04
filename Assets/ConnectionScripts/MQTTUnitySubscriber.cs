@@ -1,45 +1,53 @@
 using UnityEngine;
-
-using uPLibrary.Networking.M2Mqtt;
-using uPLibrary.Networking.M2Mqtt.Messages;
+using MQTTnet;
+using MQTTnet.Client;
+using System.Threading.Tasks;
 using System.Text;
-using UnityEditor.PackageManager;
-using System;
+using Mono.Cecil.Cil;
 
-public class Subscriber : MonoBehaviour
+
+public class MQTTUnitySubscriber : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    private MqttClient clientUnity;
-    public string brokerIp = "10.206.197.112";
-    public int brokerPort = 1883;
-    public string topic = "robot/coodonateBazaRotativa";
-    
-    void Start()
+   public string brokerIp = "10.104.183.112";
+   public int brokerPort = 1883;
+
+async void Start()
     {
-        clientUnity = new MqttClient(brokerIp);
-      
+        await Subscriber();
 
-    
-        clientUnity.Connect(brokerIp);
-
-        clientUnity.Subscribe(new string[] {topic}, new byte[] {MqttMsgBase.QOS_LEVEL_AT_MOST_ONCE});
-    
     }
+async Task Subscriber()
+    {
+        var MqttFactory = new MqttFactory();
+        var mqttClient = MqttFactory.CreateMqttClient();
+        var options = new MqttClientOptionsBuilder()
+        .WithTcpServer(brokerIp,brokerPort)
+        .WithClientId("MaxArmPub")
+        .Build();
 
-    void onMessageReceived(object sender, MqttMsgPublishEventArgs e)
-    {
-        string message =  Encoding.UTF8.GetString(e.Message);
-        Debug.Log("Data received"+message);
-    }
-    // Update is called once per frame
-    void OQuit()
-    {
-        if(clientUnity!=null && clientUnity.IsConnected)
-        clientUnity.Disconnect();
-    }
 
-    void Update()
-    {
+        mqttClient.ApplicationMessageReceivedAsync +=e =>
+        {
+            var buffer  = e.ApplicationMessage.PayloadSegment;
+            var payload = Encoding.UTF8.GetString(buffer.Array, buffer.Offset, buffer.Count);
+            Debug.Log("Received message " + payload);
+            return Task.CompletedTask;
+        };
+
+        await mqttClient.ConnectAsync(options);
+        Debug.Log("Subscriber Connected");
+
+        await mqttClient.SubscribeAsync("feedback/topic");
+        Debug.Log("Subscribed to feedback/topic");
+
+        await mqttClient.SubscribeAsync("reset/topic");
+        Debug.Log("reset/topic");
+
         
+        await mqttClient.SubscribeAsync("f_noozle/topic");
+        Debug.Log("feedback/topic");
+
+
     }
+
 }

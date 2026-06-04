@@ -1,0 +1,10 @@
+{
+    "BasicTutorial": [
+        {
+            "MoveAround":["Right", "Left","Up","Down"],
+            "MoveRobot":["Left","Right"]
+   
+        }
+    ]
+
+}

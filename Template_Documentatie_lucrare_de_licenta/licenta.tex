@@ -11,7 +11,7 @@
 \addbibresource{bibliography.bib}
 \setcounter{tocdepth}{6}
 \setcounter{secnumdepth}{6}
-
+\usepackage{comment}
 \usepackage{url}
 % \usepackage[backend=bibtex,style=numeric,citestyle=numeric,backref=true,sorting=none]{biblatex}
 
@@ -121,102 +121,110 @@
 \noindent 
 2D - 2 Dimensiuni;\\
 3D - 3 Dimensiuni; \\
+A - Amperi:\\
 AR - Augumented Reality;\\
 CAD - Computer Aided Design;\\
 CAE - Computer Aided Engineering;\\
-Kg - Kilograms
+cm - centimetrii\\;
+DC- Direct Current;\\
+Kg - Kilograms;\\
 CAM - Computer Aided Manufacturing;\\
+mA - miliAmperi\\
+mm-milimetrii;\\
 PPD - Pixel Per Degree;\\
 PPI - Pixel Per Inch;\\
 RGB - Red Green Blue;\\
 %ROS - Robot Operating System;\\
 HMD - Head-Mounted Display; \\
-HZ - Hertz
+HZ - Hertz\\;
 IoT - Internet of Things;\\
 MQTT - Message Queuing Telemetry Transport;\\
 OASIS - Organization of Advancement of Structured Information Standard;\\
 SCARA - Selective Compliance Articulated Robot Arm;\\
+TMP - TextMeshPro;\\
 UI - User Interface;\\
 URDF - Unified Robotics Description Format;\\
 USB - Universal Serial Bus:\\
 XML - Extensible Markup Language;\\
 XR - Extended Reality;\\
+V  - Voltage;\\
 VR - Virtual Reality;\\
 WIFI - Wireless Fidelity;\\
 
 % \clearpage
 \clearpage
 
-\section{Capitole principale }
-1. Introducere
-  \begin{itemize}
+%\section{Capitole principale }
+%1. Introducere
+ % \begin{itemize}
  
-       \item  Tema proiectului.
-       \item  Obiectivele și scopul lucrării. 
- \end{itemize}
+  %     \item  Tema proiectului.
+   %    \item  Obiectivele și scopul lucrării. 
+ %\end{itemize}
 
 
-2. Fundamente teoretice
-  \begin{itemize}
+%2. Fundamente teoretice
+ % \begin{itemize}
  
-       \item  Ce este tehnologia VR
-       \item  Cum se poate interacționa în mediul VR?
-       \item  Despre roboții industriali. 
-        \item De ce este necesară simularea instruirii pe roboții industriali?
-        \item Ce este URDF?
-        \item Ce este MQTT?
- \end{itemize}
+  %     \item  Ce este tehnologia VR
+   %    \item  Cum se poate interacționa în mediul VR?
+    %   \item  Despre roboții industriali. 
+     %   \item De ce este necesară simularea instruirii pe roboții industriali?
+      %  \item Ce este URDF?
+       % \item Ce este MQTT?
+ %\end{itemize}
 
-3. Proiectarea în VR
-  \begin{itemize}
-     \item Echipamente folosite(descriere)
-       \item  descriere scenarii antrenament
-       \item  arhitectura aplicației
-       \item mecanisme de interacțiune utilizator-robot
-        \item modelarea robotului/mediului pentru simulare în VR
- \end{itemize}
+%3. Proiectarea în VR
+  %\begin{itemize}
+   %  \item Echipamente folosite(descriere)
+    %   \item  descriere scenarii antrenament
+     %  \item  arhitectura aplicației
+      % \item mecanisme de interacțiune utilizator-robot
+       % \item modelarea robotului/mediului pentru simulare în VR
+% \end{itemize}
 
-4. Implementare
-  \begin{itemize}
+%4. Implementare
+ % \begin{itemize}
  
-       \item  creare mediu în VR
-       \item  implementarea comportamentului robotului
-       \item sistem de feedback pentru utilizator
-        \item integrarea elementelor 3D
- \end{itemize}
+  %     \item  creare mediu în VR
+   %    \item  implementarea comportamentului robotului
+    %   \item sistem de feedback pentru utilizator
+     %   \item integrarea elementelor 3D
+ %\end{itemize}
  
- 5. Testarea implementării
+% 5. Testarea implementării
 
- 6. Concluzii
+ %6. Concluzii
 
-\subsection{Obiective principale:}
-  \begin{itemize}
-       \item  modelarea în 3D a robotului.
-       \item  implementare unui scenariu în VR în care utilizatorul poate interacționa cu robotul.
-       \item implementare unui mod de antrenament pe diferite scenarii.
-        \item evaluarea utilității sistemului ca instrument educațional.
- \end{itemize}
+%\subsection{Obiective principale:}
+ % \begin{itemize}
+  %     \item  modelarea în 3D a robotului.
+   %    \item  implementare unui scenariu în VR în care utilizatorul poate interacționa cu robotul.
+    %   \item implementare unui mod de antrenament pe diferite scenarii.
+     %   \item evaluarea utilității sistemului ca instrument educațional.
+% \end{itemize}
 
 
-\section{Echipamente disponibile:}
-  \subsection{Hardware:}
-  \begin{itemize}
-       \item  robot (MaxArm:)
-       \item  cască VR (Oculus Quest 3s:)
+%\section{Echipamente disponibile:}
+ % \subsection{Hardware:}
+  %\begin{itemize}
+   %    \item  robot (MaxArm:)
+    %   \item  cască VR (Oculus Quest 3s:)
     
- \end{itemize}
+ %\end{itemize}
 
-  \subsection{Software:}
-  \begin{itemize}
-       \item  Unity cu plugin-uri pentru dezvoltare VR.
-       \item  Blender/Fusion 360 pentru modelare în 3D.
-     
- \end{itemize}
+  %\subsection{Software:}
+ % \begin{itemize}
+  %     \item  Unity cu plugin-uri pentru dezvoltare VR.
+   %    \item  Blender/Fusion 360 pentru modelare în 3D.
+    % 
+ %\end{itemize}
 
 
 \include{./capitole/cap1}
 \include{./capitole/cap2}
 \include{./capitole/cap3}
 \include{./capitole/cap4}
+\include{./capitole/cap5}
 \printbibliography[heading=bibintoc,title=Bibliografie momentană]
 \end{document}

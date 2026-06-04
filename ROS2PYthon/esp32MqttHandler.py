@@ -3,7 +3,7 @@ import time
 from umqttsimple import MQTTClient
 
 
-class esp32MQTTSubscriber:
+class esp32MQTTHandler:
 
         def __init__(self):
 
@@ -12,22 +12,19 @@ class esp32MQTTSubscriber:
             self.verticalArmAngle=0.0
             self.upDownAngle=0.0
             self.armIniPos = 0.0
+            self.noozleValues = 0.0
+            self.noozleValues1 = 0.0
             
         
         
-        def identificationInfoSubs(self,CLIENT_ID, MQTT_SERVER, MQTT_PORT):
+        def identificationInfo(self,CLIENT_ID, MQTT_SERVER, MQTT_PORT):
                 self.client = MQTTClient(CLIENT_ID, MQTT_SERVER, MQTT_PORT)
                 self.client.set_callback(self.CallBack)
         def CallBack(self, topic, msg):
             try:
         
-                topic_str = topic.decode()
-      
+                topic_str = topic.decode()  
                 msg_str = int(float(msg.decode()))
-        
-       
-                
-        
                 msgReceived = float(msg_str)
         
                 if topic_str == "rotativeBase/topic":
@@ -36,17 +33,17 @@ class esp32MQTTSubscriber:
                     self.verticalArmAngle = msgReceived 
                 elif topic_str == "upDownSegment/topic":
                     self.upDownAngle = msgReceived 
-                elif topic.str == "armHome/topic":
-                      self.armIniPos = msgReceived
+                elif topic_str == "armHome/topic":
+                    self.armIniPos = msgReceived
+                elif topic_str == "noozle/topic":
+                    self.noozleValues = msgReceived
+                elif topic_str == "noozle1/topic":
+                    self.noozleValues1 = msgReceived
 
             except ValueError:
                 print("Eroare conversie float: Nu pot converti '{}'")
             except Exception as e:
-                print("Eroare neprevăzută în CallBack:", e)
-          
-                      
-               
-
+                print("Unexpected error in callback:", e)
         
       
         def connectToBroker(self):
@@ -60,20 +57,17 @@ class esp32MQTTSubscriber:
                         self.connectToBroker()
         
         def sub(self,topic):
-            
                 self.client.subscribe(topic)
-            
-#                 while True:
-#                         if True:
-#                                 self.client.wait_msg()
-#                         else:
-#                                 self.client.check_msg()
-#                                 time.sleep(1)
-# 
 
-              
+
+        def pub(self,topic, msg):
+                self.client.publish(topic, msg)
+                
+
 
                
                
+
+
 
 
