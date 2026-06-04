@@ -13,7 +13,7 @@ public class MQTTUnityPublisher : MonoBehaviour
 
     public InputActionReference xButton;
 
-        public InputActionReference mainTriggerLeft;
+    public InputActionReference mainTriggerLeft;
 
     public string brokerIp = "10.104.183.112";
     public int brokerPort = 1883;
@@ -34,8 +34,8 @@ public class MQTTUnityPublisher : MonoBehaviour
         if(xButton.action!=null)
         xButton.action.Enable();
 
-             if(mainTriggerLeft.action!=null)
-     mainTriggerLeft.action.Enable();
+        if(mainTriggerLeft.action!=null)
+        mainTriggerLeft.action.Enable();
     
     }
     async void Start()
@@ -90,7 +90,7 @@ async void Update()
         float curZ = upDownSegment.jointPosition[0];
 
       
-        int deltaX = Mathf.RoundToInt((curX - lastRawX) * sensitivity);
+        int deltaX = Mathf.RoundToInt(-(curX - lastRawX) * sensitivity);
         int deltaY = Mathf.RoundToInt((curY - lastRawY) * sensitivity);
         int deltaZ = Mathf.RoundToInt(-(curZ - lastRawZ) * sensitivity);
 
@@ -125,7 +125,7 @@ async void Update()
         
         float buttonValue = xButton.action.ReadValue<float>();
         await PublishFloat("armHome/topic", buttonValue);
-        Debug.Log(buttonValue );
+        //Debug.Log(buttonValue );
             
    
         }
@@ -168,9 +168,8 @@ async Task SendNoozleValues()
         nozzleIsActive = !nozzleIsActive; 
         wasPressedLastFrame= true;
         float valueToSend = nozzleIsActive ? 1.0f : 0.0f;
-
         await PublishFloat("noozle/topic", valueToSend);
-        Debug.Log("Toggle Nozzle: " + (valueToSend));
+       // Debug.Log("Toggle Nozzle: " + (valueToSend));
 
     }
 

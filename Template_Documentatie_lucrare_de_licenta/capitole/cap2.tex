@@ -78,8 +78,21 @@
 
 
 
-\setcounter{page}{5}
+\setcounter{page}{7}
 \section{Fundamente teoretice}
+\subsection{Digital Twin}
+Un "digital twin" este o reprezentare virtuală a unui obiect fizic sau sistem ce folosește date din timp real să reflecte cu acuratețe comportamentului geamănului din lumea reală, performanțe și condiții.
+"Digital twins" permit monitorizate continuă, simulare și analiză a unui obiect, sistem sau produs pe durata timpului său de viață, de la proiectare și producție, până la mentenanță și dezafectare.
+Aceștia pot  să reprezinte orice obiect într-un mod virtual, de la clădiri și poduri, până la mașini, avioane, artefacte antice și chiar întreaga planetă\cite{DigTwinIBM}. 
+
+De asemenea, prin "digital twins"  pot să se modeleze sisteme complexe cum sunt: traficul, evenimente meteorologice, planuri medicale de tratament, procese și operațiuni din fabrici sau în medii experimentale, și chiar pot să fie bazați fie pe oameni reali, fie imaginari cu toate trăsăturile necesare cum sunt: tonul vocii, înfățișare și personalitate \cite{DigTwinIBM}. 
+
+
+\subsection{Cinematica inversă}
+Cinematica reprezintă studiul mișcării fără să se considere cauza mișcării, cum sunt forțele și cuplurile. Cinematica inversă reprezintă folosirea ecuațiilor cinematice să determine mișcarea unui robot pentru a ajunge la destinație. De exemplu, pentru a putea apuca un obiect, un braț robotic folosit în procese de fabricație necesită mișcări precise de la poziția inițială către poziția necesară. Capătul de prindere al robotului reprezintă efectorul final. Configurația robotului reprezintă o listă a pozițiilor de "Joint-uri" care pot fi acționate atât timp cât nu depășesc constrângerile robotului.
+
+ Pornind de la poziția la care efectorul final trebuie să ajungă, cinematica inversă poate să determine o configurație a  "Joint-urilor" astfel încât efectorul final să poată să se miște către țintă \cite{IK}.
+
 \subsection{Realitatea virtuală}
 Realitatea virtuală reprezintă un termen care descrie un mediu 3D generat de un calculator care poate fi explorat și se poate interacționa de către un utilizator uman. Acel utilizator devine o parte a mediului virtual sau devine imersive cu mediul și cât timp se află în mediu, poate să manipuleze obiectele sau să performeze o serie de acțiuni.
 
@@ -118,14 +131,14 @@ Acest model funcționează în felul următor:
 \begin{itemize}
 	\item Mesajele reprezintă un set de date de comunicație care sunt trimise de la emițător la receptor. Mesajele pot fi de orice tip de dată \cite{ps}
 	\item Topicul care acționează ca un canal intermediar între emițător și receptor. Gestionează o listă de receptori care sunt interesate în mesajele care au același topic \cite{ps}
-	\item Abonații reprezintă destinatarul mesajului. Aceștia trebuie să se înregistreze sau să se aboneze la un topicul care îi interesează. Pot să performenze diferite funcții sau să facă ceva diferit cu mesajul în paralel \cite{ps}
+	\item Abonații reprezintă destinatarul mesajului. Aceștia trebuie să se înregistreze sau să se aboneze la un topicul care îi interesează. Pot să performeze diferite funcții sau să facă ceva diferit cu mesajul în paralel \cite{ps}
 	\item Publicatorii reprezintă componenta care trimite mesajele. Creează mesaje despre un topic și le trimite pe toate la toți abonații ai acelui topic. Interacțiunea dintre publicator și abonați reprezintă o relație de tipul unul la mulți. Publicatorul nu trebuie să știe cine folosește informația, iar abonații nu trebuie să cunoască proveniența mesajelor, transmisia fiind una de difuzare \cite{ps}
 \end{itemize}
 
 Modelul de mesagerie de tip publicare/abonare reprezintă următoarele avantaje:
 \begin{itemize}
-	\item Eliminarea polling-ului. Topicurile de mesaje care permit transmiterea mesajelor instantaneu eliminând verificările periodice pe care consumatorii mesajlui trebuie să le facă când apare informație nouă sau când este actualizată \cite{ps}.
-	\item Direcționare dinamică. Modelul plubicare/abonat face ca descoperirea serviciilor mai ușor, mai natural, și mai greu susceptibilă la erori. În loc ca aplicația să întrețină un grup de abonați căruia să-i trimită mesajele, un publicator va posta mesajele către un topic specific, astfel încât abonații să se aboneze la mesajele cu topicurile de interes \cite{ps}.
+	\item Eliminarea polling-ului. Topicurile de mesaje care permit transmiterea mesajelor instantaneu eliminând verificările periodice pe care consumatorii mesajului trebuie să le facă când apare informație nouă sau când este actualizată \cite{ps}.
+	\item Direcționare dinamică. Modelul plubicare/abonat face ca descoperirea serviciilor mai ușor, mai natural, și mai greu susceptibilă la erori. În loc ca aplicația să întrețină un grup de abonați căruia să-i trimită mesajele, un publicator va posta mesajele către un topic specific, astfel încât abonații să se aboneze la mesajele cu topic-urile de interes \cite{ps}.
 	\item Simplificarea comunicației. Acest model simplifică procesul de comunicație prin eliminarea conexiunilor punct-la-punct care leagă o singură conexiune către un topic. Topicul va gestiona abonările, astfel încât să decidă ce mesaje sunt destinate cărui endpoint \cite{ps}.
 \end{itemize}
 

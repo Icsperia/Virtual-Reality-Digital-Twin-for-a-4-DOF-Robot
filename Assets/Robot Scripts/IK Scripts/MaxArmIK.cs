@@ -10,7 +10,7 @@ public class RoboticArmInverseKinematics : MonoBehaviour
     [Header("Target")]
     public Transform target;
 
-    [Header("Scala robot in Unity (base_link scale)")]
+    [Header("Scala robot in Unity (base link scale)")]
     public float robotScale = 5f;
 
     [Header("IK Settings")]
@@ -21,8 +21,8 @@ public class RoboticArmInverseKinematics : MonoBehaviour
     const float L2 = 128.0f;
     const float L3 = 138.0f;
 
-    private float _currentShoulder;
-    private float _currentElbow;
+    private float  currentShoulder;
+    private float  currentElbow;
 
     void FixedUpdate()
     {
@@ -72,11 +72,11 @@ public class RoboticArmInverseKinematics : MonoBehaviour
 
         Debug.Log($"[IK] Shoulder={targetShoulder:F1} Elbow={targetElbow:F1} d={d:F0}mm");
 
-        _currentShoulder = Mathf.LerpAngle(_currentShoulder, targetShoulder, Time.fixedDeltaTime * jointSpeed);
-        _currentElbow    = Mathf.LerpAngle(_currentElbow,    targetElbow,    Time.fixedDeltaTime * jointSpeed);
+         currentShoulder = Mathf.LerpAngle( currentShoulder, targetShoulder, Time.fixedDeltaTime * jointSpeed);
+         currentElbow    = Mathf.LerpAngle( currentElbow,    targetElbow,    Time.fixedDeltaTime * jointSpeed);
 
-        SetJointAngle(shoulder, _currentShoulder);
-        SetJointAngle(elbow,    _currentElbow);
+        SetJointAngle(shoulder,  currentShoulder);
+        SetJointAngle(elbow,     currentElbow);
     }
 
     void SetJointAngle(ArticulationBody joint, float angle)
