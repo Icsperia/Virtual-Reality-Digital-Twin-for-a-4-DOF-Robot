@@ -16,11 +16,10 @@ public class RoboticArmInverseKinematics : MonoBehaviour
     [Header("IK Settings")]
     public float jointSpeed = 8f;
 
-    const float L0 = 84.0f;
-    const float L1 = 8.2f;
-    const float L2 = 128.0f;
-    const float L3 = 138.0f;
-
+    const float L0 = 66.0f;
+    const float L1 = 8.0f;
+    const float L2 = 140.0f;
+    const float L3 = 150.0f;
     private float  currentShoulder;
     private float  currentElbow;
 
