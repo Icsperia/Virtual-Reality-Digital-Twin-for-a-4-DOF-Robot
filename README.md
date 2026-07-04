@@ -10,3 +10,13 @@ Key Features
     High-Fidelity Mechanical Simulation: The 3D model of the robotic arm was designed from scratch using Autodesk Fusion, ensuring accurate mechanical proportions, precise joint articulation, and realistic physics within the Unity engine.
 
     Immersive Training Scenarios: Provides a safe digital workspace where users can learn machine operation, test kinematics, and practice safety protocols without real-world hazards.
+
+Technologies & Tools
+
+    Simulation & VR: Unity 3D, C#
+
+    CAD & 3D Modeling: Autodesk Fusion
+
+    Communication & IoT: MQTT Protocol, Mosquitto Broker
+
+    Hardware Interfacing: Python (Paho-MQTT, Serial communication)
