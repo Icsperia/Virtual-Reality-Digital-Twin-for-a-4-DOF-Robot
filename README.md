@@ -20,3 +20,10 @@ Technologies & Tools
     Communication & IoT: MQTT Protocol, Mosquitto Broker
 
     Hardware Interfacing: Python (Paho-MQTT, Serial communication)
+
+
+
+https://github.com/user-attachments/assets/b277b08d-7292-46dd-83df-eedab1a9c66e
+
+
+
